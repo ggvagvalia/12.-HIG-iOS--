@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_2__HIG___შესავალი_iOS_ში" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EsL-Ni-6Uw">
+                                <rect key="frame" x="319" y="219" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="HDu-1R-Cgv"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="უმცირესი საერთო ჯერადი" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLV-1a-IeH">
+                                <rect key="frame" x="26" y="219" width="283" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="შეიყვანეთ მნიშვნელობა..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fEk-6n-ZBD">
+                                <rect key="frame" x="25" y="274.33333333333331" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="makeTextRed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="7Yh-5f-ocm"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="შეიყვანეთ მნიშვნელობა..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dND-q4-I6r">
+                                <rect key="frame" x="25" y="343.33333333333331" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="makeTextRed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Txs-HI-Wnw"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scF-uc-4tH">
+                                <rect key="frame" x="25" y="412.33333333333331" width="343" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="გამოთვლა" titleAlignment="center"/>
+                                <connections>
+                                    <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MeE-lJ-jxy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="პასუხი: " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDx-w5-QUw">
+                                <rect key="frame" x="0.0" y="481.66666666666669" width="393" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IDx-w5-QUw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Wm-1w-J7Y"/>
+                            <constraint firstItem="dND-q4-I6r" firstAttribute="leading" secondItem="fEk-6n-ZBD" secondAttribute="leading" id="6bS-wL-OcR"/>
+                            <constraint firstItem="fEk-6n-ZBD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="BNc-e9-KHx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IDx-w5-QUw" secondAttribute="trailing" id="Pgu-Xx-oWL"/>
+                            <constraint firstItem="EsL-Ni-6Uw" firstAttribute="top" secondItem="CLV-1a-IeH" secondAttribute="top" id="Rgf-VL-xq1"/>
+                            <constraint firstItem="scF-uc-4tH" firstAttribute="leading" secondItem="fEk-6n-ZBD" secondAttribute="leading" id="RpJ-zh-ABW"/>
+                            <constraint firstItem="CLV-1a-IeH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="SDR-dJ-FLg"/>
+                            <constraint firstItem="fEk-6n-ZBD" firstAttribute="top" secondItem="CLV-1a-IeH" secondAttribute="bottom" constant="35" id="SlH-Fq-Ayp"/>
+                            <constraint firstItem="dND-q4-I6r" firstAttribute="trailing" secondItem="fEk-6n-ZBD" secondAttribute="trailing" id="UYE-jK-FLQ"/>
+                            <constraint firstItem="IDx-w5-QUw" firstAttribute="top" secondItem="scF-uc-4tH" secondAttribute="bottom" constant="35" id="V3L-1u-j0M"/>
+                            <constraint firstItem="CLV-1a-IeH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="YjE-Il-jtP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EsL-Ni-6Uw" secondAttribute="trailing" constant="25" id="bwk-uI-lkL"/>
+                            <constraint firstItem="EsL-Ni-6Uw" firstAttribute="leading" secondItem="CLV-1a-IeH" secondAttribute="trailing" constant="10" id="g9S-k1-ZLO"/>
+                            <constraint firstItem="IDx-w5-QUw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gY2-oM-UCX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fEk-6n-ZBD" secondAttribute="trailing" constant="25" id="kV8-4b-Xa3"/>
+                            <constraint firstItem="scF-uc-4tH" firstAttribute="trailing" secondItem="fEk-6n-ZBD" secondAttribute="trailing" id="rwx-H6-NBt"/>
+                            <constraint firstItem="scF-uc-4tH" firstAttribute="top" secondItem="dND-q4-I6r" secondAttribute="bottom" constant="35" id="toS-C0-Izl"/>
+                            <constraint firstItem="dND-q4-I6r" firstAttribute="top" secondItem="fEk-6n-ZBD" secondAttribute="bottom" constant="35" id="v9V-E1-7Hb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="IDx-w5-QUw" id="pvu-VG-1N9"/>
+                        <outlet property="calculateButton" destination="scF-uc-4tH" id="ux7-I8-0pS"/>
+                        <outlet property="firstTextField" destination="fEk-6n-ZBD" id="5KC-t7-7sM"/>
+                        <outlet property="secondTextField" destination="dND-q4-I6r" id="tvd-L3-SAe"/>
+                        <outlet property="switchVar" destination="EsL-Ni-6Uw" id="fWH-zC-TeH"/>
+                        <outlet property="usjLabel" destination="CLV-1a-IeH" id="pN9-55-iEl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.21374045801527" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
